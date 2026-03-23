@@ -11,7 +11,7 @@
 - **🔍 自動分析變更** — 智慧判斷檔案差異，決定單一或多個 commit 策略
 - **🔗 可點擊的 commit 結果** — 提交後輸出每筆變更的 markdown 連結，直接跳轉至對應行號，方便開發者確認及查找
 - **🇹🇼 繁體中文訊息** — commit 描述、Body、Footer 全程中文撰寫（必要時使用英文）
-- **📂 Body 以檔案分層** — Body 以檔案為單位分組，同檔案多個 chunk 自動列為子項目，結構清晰易讀
+- **📂 Commit Body 以檔案分層** — Commit Body 以檔案為單位分組，同檔案多個 chunk 自動列為子項目，結構清晰易讀
 - **📐 雙規範格式** — 以 [Angular Commit Message Guidelines](https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md) 為基礎，並融合 [Conventional Commits](https://www.conventionalcommits.org/) 延伸，type / scope / 描述清晰分層
 
 ---
