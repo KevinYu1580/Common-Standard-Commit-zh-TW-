@@ -103,6 +103,8 @@ EOF
 )"
 ```
 
+- **嚴禁**在 commit 訊息中附加 `Co-Authored-By` 或任何 AI 署名行
+
 若有多個 commit 計畫，依序重複步驟三至五。
 
 ## 步驟六：呈現 commit 結果
