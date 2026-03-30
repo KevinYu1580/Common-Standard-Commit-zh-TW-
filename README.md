@@ -1,8 +1,8 @@
-# 📝 Common Standard Commit (zh-TW)
+# 📝 Common-Commit-Command_zh-TW
 
-> 一個以 **Angular Commit Message Guidelines** 為基礎的 Claude Code Skill，commit 訊息全程以**繁體中文**撰寫，並在提交後輸出可點擊的互動式結果。
+> 一個以 **Angular Commit Message Guidelines** 為基礎的 Claude Code Command，commit 訊息全程以**繁體中文**撰寫，並在提交後輸出可點擊的互動式結果。
 
-本 Skill 的 commit 格式以 [Angular 官方 Commit Message Guidelines](https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md) 為核心規範，並參考 [Conventional Commits](https://www.conventionalcommits.org/) 的延伸，加入 `style`、`chore` 等業界常用 type。
+本 Command 的 commit 格式以 [Angular 官方 Commit Message Guidelines](https://github.com/angular/angular/blob/main/contributing-docs/commit-message-guidelines.md) 為核心規範，並參考 [Conventional Commits](https://www.conventionalcommits.org/) 的延伸，加入 `style`、`chore` 等業界常用 type。
 
 ---
 
@@ -18,17 +18,17 @@
 
 ## 🚀 安裝
 
-### 方法一：直接複製 SKILL.md
+### 方法一：直接複製 command.md
 
 ```bash
-cp SKILL.md ~/.claude/skills/commit.md
+cp command.md ~/.claude/commands/commit.md
 ```
 
 ### 方法二：Clone 整個 Repo
 
 ```bash
-git clone https://github.com/<your-username>/Common-Standard-Commit-zh-TW.git
-cp "Common-Standard-Commit-zh-TW/SKILL.md" ~/.claude/skills/commit.md
+git clone https://github.com/<your-username>/Common-Commit-Command-zh-TW.git
+cp "Common-Commit-Command-zh-TW/command.md" ~/.claude/commands/commit.md
 ```
 
 安裝完成後，在 Claude Code 輸入 `/commit` 即可讓agent自動分析及提交commit。
@@ -43,7 +43,7 @@ cp "Common-Standard-Commit-zh-TW/SKILL.md" ~/.claude/skills/commit.md
 /commit
 ```
 
-### Skill 執行流程
+### Command 執行流程
 
 ```
 1. 分析變更   →   git status / git diff
@@ -99,7 +99,7 @@ issue #42
 
 ## 🔗 互動式 Commit 結果
 
-提交成功後，Skill 會輸出如下格式至chat session，每條變更皆為可點擊連結：
+提交成功後，Command 會輸出如下格式至chat session，每條變更皆為可點擊連結：
 
 ### markdown格式範例
 

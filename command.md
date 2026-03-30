@@ -1,5 +1,4 @@
 ---
-name: commit
 description: 自動分析變更並建立 git commit
 allowed-tools: Bash(git *), TodoWrite
 ---
