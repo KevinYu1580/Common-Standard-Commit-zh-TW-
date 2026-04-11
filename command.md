@@ -1,5 +1,6 @@
 ---
 description: 自動分析變更並建立 git commit
+model: haiku
 allowed-tools: Bash(git *), TodoWrite
 ---
 
@@ -15,9 +16,14 @@ allowed-tools: Bash(git *), TodoWrite
 
 ## 步驟二：規劃 commit 策略
 
-- 判斷所有變更是否屬於**同一主題**
-  - 若是 → 建立單一 commit
-  - 若否 → 規劃多個 commit，依主題分批暫存與提交
+依以下優先順序判斷是否需要拆分：
+
+1. **type 不同 → 必須拆分**（例如 `feat` 與 `refactor` 不可混在同一個 commit）
+2. **功能領域不同 → 必須拆分**（例如「新增主題持久化」與「改進表單提交流程」屬於不同領域）
+3. **同一 type 且同一功能領域 → 建立單一 commit**（例如同一功能同時改 store 與 component）
+
+> **判斷技巧**：試著為這批變更寫一個 Conventional Commits 標題，若需要用「和」或「並」連接兩件事 → 幾乎一定要拆分
+
 - 用 `TodoWrite` 記錄每個待完成的 commit 計畫
 
 ## 步驟三：暫存檔案
